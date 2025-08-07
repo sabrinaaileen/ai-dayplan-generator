@@ -11,10 +11,50 @@
 <body>
     <header>
         <h1>Hello there!</h1>
+        <p>I know how stressful life can be. I hope this AI Tool can help you to manage your day better!</p>
     </header>
+    <main>
+        <section>
+            <h2>Let's gather your information ⌨️</h2>
+            <form>
+                <input type="text" placeholder="Enter your mood..." required autofocus class="text-input" id="first-input"/>
+                <input type="text" placeholder="Enter what you want to pursue..." required autofocus class="text-input" id="second-input"/>
+                <input type="text" placeholder="Enter how many freetime hours you have..." required autofocus class="text-input" id="third-input"/>
+                <input type="text" placeholder="When do you have free time..." required autofocus class="text-input" id="fourth-input"/>
+                <input type="submit" value="Create" title="Create your perfect day" id="input-button" />
+            </form>
+        </section>
+        <section>
+            <h2>What I can offer you ⏰</h2>
+            <div class="grid">
+                <div class="grid item">
+                    <h4>What you selected</h4>
+                    <div class="text-output">
+                        <ul>
+                            <li>Your mood is <span>this</span></li>
+                            <li>Your goal is <span>this</span></li>
+                            <li>Your free time is <span>this</span></li>
+                            <li>Your free time is in the <span>this</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grid item">
+                    <h4>Your suggestions</h4>
+                    <div class="text-output">
+                        <ul>
+                            <li>Your first suggestion <span>this</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <p>But the most important thing is: listen to yourself. When you have no energy left, you are tired as hell, then maybe rest is the best option! Listen to your ❤</p>
+        </section>
+    </main>
     <footer>
         <h5>General Kenobi!</h5>
-        <span>This website was coded by <a href="https://www.sabrina-aileen-hodapp.de" target="_blank" class="footer-link" title="link to my website">Sabrina</a> and is open-sourced on <a href="https://github.com/sabrinaaileen" target="_blank" class="footer-link" title="link to my GitHub profile">GitHub</a>.</span>
+        <span>This website was coded by <a href="https://www.sabrina-aileen-hodapp.de" target="_blank" class="footer-link" title="link to my website">Sabrina</a>, is open-sourced on <a href="https://github.com/sabrinaaileen" target="_blank" class="footer-link" title="link to my GitHub profile">GitHub</a> and hostet on <a href="https://ai-dayplaning-website.netlify.app" target="_blank" class="footer-link" title="link to Netlify hosted website">Netlify</a>.</span>
     </footer>
     <script src="index.js"></script>
 </body>

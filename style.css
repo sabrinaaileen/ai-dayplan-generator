@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
