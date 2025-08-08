@@ -16,49 +16,47 @@
     <main>
         <section>
             <h2>Let's gather your information ⌨️</h2>
-            <form>
+            <form id="input-form">
                 <div class="grid">
                     <div class="grid-item">
                         <input type="text" placeholder="Enter your mood..." required autofocus class="text-input" id="first-input"/>
                     </div>
                     <div class="grid-item">
-                        <input type="text" placeholder="Enter what you want to pursue..." required autofocus class="text-input" id="second-input"/>
+                        <input type="text" placeholder="Enter what you want to pursue..." required class="text-input" id="second-input"/>
                     </div>
                     <div class="grid-item">
-                        <input type="text" placeholder="Enter how many freetime hours you have..." required autofocus class="text-input" id="third-input"/>
+                        <input type="text" placeholder="Enter how many freetime hours you have..." required class="text-input" id="third-input"/>
                     </div>
                     <div class="grid-item">
-                        <input type="text" placeholder="When do you have free time..." required autofocus class="text-input" id="fourth-input"/>
+                        <input type="text" placeholder="When do you have free time..." required class="text-input" id="fourth-input"/>
                     </div>
                 </div>
                 <input type="submit" value="Create" title="Create your perfect day" id="input-button" />
             </form>
         </section>
-        <section>
+        <section class="hidden" id="dayplan-section">
             <h2>What I can offer you ⏰</h2>
             <div class="grid">
                 <div class="grid-item">
                     <div class="text-output">
                         <h4>What you selected</h4>
                         <ul>
-                            <li>Your mood is <span class="user-instructions">this</span></li>
-                            <li>Your goal is <span class="user-instructions">this</span></li>
-                            <li>Your free time is <span class="user-instructions">this</span></li>
-                            <li>Your free time is in the <span class="user-instructions">this</span></li>
+                            <li>Your mood is <span class="user-instructions" id="user-mood"></span></li>
+                            <li>Your goal is <span class="user-instructions" id="user-goal"></span></li>
+                            <li>Your free time is <span class="user-instructions" id="user-time"></span></li>
+                            <li>Your free time is in the <span class="user-instructions" id="user-timezone"></span></li>
                         </ul>
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="text-output">
                     <h4>Your suggestions</h4>
-                        <ul>
-                            <li>Your first suggestion <span>this</span></li>
-                        </ul>
+                         <span id="suggestions"></span>  
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="hidden" id="motivation-section">
             <p>But the most important thing is: listen to yourself. When you have no energy left, you are tired as hell, then maybe rest is the best option! Listen to your ❤</p>
         </section>
     </main>
