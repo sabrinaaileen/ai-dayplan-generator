@@ -19,7 +19,7 @@ header h1, header p {
 section {
     background-color: white;
     border-radius: 10px;
-    padding: 20px 10px;
+    padding: 20px 20px;
     margin: 30px auto;
     width: 50%;
 }
@@ -41,6 +41,15 @@ section {
 .text-input::placeholder {
     color: rgba(1, 112, 1, 0.8);
     font-weight: bold;
+    font-size: 12px;
+}
+.text-input-label {
+    font-size: 10px;
+    text-align: left;
+    display: block;
+    padding-top: 3px;
+    padding-left: 10px;
+    color: #7c7c7c;
 }
 #input-button {
     color: rgba(1, 112, 1, 0.8);
@@ -61,7 +70,9 @@ section {
 }
 .text-output ul {
     display: inline-block;
-    padding: 0;
+    padding: 0px;
+    padding-left: 10px;
+    margin: 0px;
 }
 .text-output li {
     list-style: none;
@@ -77,4 +88,18 @@ section {
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
+}
+h6 {
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }

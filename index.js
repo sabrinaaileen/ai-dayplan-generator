@@ -25,19 +25,27 @@ const generateDayplan = (event) => {
     // api call
     axios.get(apiUrl).then(displayDayplan);
     
+    // data update
     let userMood = document.querySelector('#user-mood');
     let userGoal = document.querySelector('#user-goal');
     let userTime = document.querySelector('#user-time');
     let userTimezone = document.querySelector('#user-timezone');
     userMood.innerHTML = `${firstInput.value}`;
     userGoal.innerHTML = `${secondInput.value}`;
-    userTime.innerHTML = `${thirdInput.value}`;
+    if(thirdInput.value === "1") {
+        userTime.innerHTML = `${thirdInput.value} hour`;
+    } else {
+        userTime.innerHTML = `${thirdInput.value} hours`;
+    }
     userTimezone.innerHTML = `${fourthInput.value}`;
 
     let dayplanSection = document.querySelector('#dayplan-section');
     let motivationSection = document.querySelector('#motivation-section');
     dayplanSection.classList.remove("hidden");
     motivationSection.classList.remove("hidden");
+
+    let suggestionsText = document.querySelector("#suggestions");
+    suggestionsText.innerHTML = '<p class="blink">Generating you plan</p>';
 }
 
 let inputButton = document.querySelector("#input-form");
