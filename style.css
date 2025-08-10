@@ -89,6 +89,9 @@ section {
     font-weight: bold;
     cursor: pointer;
 }
+footer span {
+    font-size: 11px;
+}
 h6 {
     padding-bottom: 5px;
     margin-bottom: 0px;
@@ -102,4 +105,16 @@ h6 {
   50% {
     opacity: 0;
   }
+}
+
+@media(max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    header {
+        width: 90%;
+    }
+    section {
+        width: 80%;
+    }
 }
