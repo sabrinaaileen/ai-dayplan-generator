@@ -30,14 +30,14 @@ const generateDayplan = (event) => {
     let userGoal = document.querySelector('#user-goal');
     let userTime = document.querySelector('#user-time');
     let userTimezone = document.querySelector('#user-timezone');
-    userMood.innerHTML = firstInput.value.toLowerCase();
-    userGoal.innerHTML = secondInput.value.toLowerCase();
+    userMood.innerHTML = firstInput.value.toLowerCase().replace(/[^\w\s]/g, '');
+    userGoal.innerHTML = secondInput.value.toLowerCase().replace(/[^\w\s]/g, '');
     if(thirdInput.value === "1") {
-        userTime.innerHTML = `${thirdInput.value} hour`;
+        userTime.innerHTML = `${thirdInput.value.toLowerCase().replace(/[^\w\s]/g, '')} hour`;
     } else {
-        userTime.innerHTML = `${thirdInput.value} hours`;
+        userTime.innerHTML = `${thirdInput.value.toLowerCase().replace(/[^\w\s]/g, '')} hours`;
     }
-    userTimezone.innerHTML = fourthInput.value.toLowerCase();
+    userTimezone.innerHTML = fourthInput.value.toLowerCase().replace(/[^\w\s]/g, '');
 
     let dayplanSection = document.querySelector('#dayplan-section');
     let motivationSection = document.querySelector('#motivation-section');
